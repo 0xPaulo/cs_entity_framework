@@ -12,5 +12,15 @@ namespace ApiCrudEF.Estudantes
             Id = Guid.NewGuid();
             Ativo = true;
         }
+
+        public void atualizarNome(string nome)
+        {
+            Nome = nome;
+        }
+
+        public void desativar()
+        {
+            Ativo = false;
+        }
     }
 }
